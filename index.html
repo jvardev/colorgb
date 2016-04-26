@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>ColorRGB</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/libs/dark-hive/jquery-ui-1.10.3.custom.css" />
+		<script src="js/libs/jquery-1.9.1.js"> </script>
+		<script src="js/libs/jquery-ui-1.10.3.custom.js"> </script>
+		<script src="js/main.js"> </script>
+ <script type="text/javascript">(function() {var walkme = document.createElement('script'); walkme.type = 'text/javascript'; walkme.async = true; walkme.src = 'http://cdn.walkme.com/users/62c8a86088b040f98be7412e6f218805/walkme_62c8a86088b040f98be7412e6f218805.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(walkme, s); window._walkmeConfig = {smartLoad:true}; })();</script>
+	</head>
+	<body>
+		<div id="app_header">
+			<h1>ColorRGB: <span> generador de color RGB<span></h1>
+			<p></p>
+		</div>
+	<div id="content">
+
+		<!-- controles generales -->
+		<div id="app_controls" class="panel">
+
+
+			<div id="color_select">
+
+				<label id="main_label">Elemento:</label>
+				<input type="radio" id="radio_font" name="radio" checked="true"/>
+				<label for="radio_font">Text</label>
+				<input type="radio" id="radio_back" name="radio" />
+				<label for="radio_back">background</label>
+			</div>
+
+			<!--checkbox-->
+			<div id="rgb_select">
+				<label id="main_label">Componente:</label>
+				<input type="checkbox" id="chk_red" checked="true" />
+				<label for="chk_red">Red</label>
+				<input type="checkbox" id="chk_green" checked="true" />
+				<label for="chk_green">Green</label>
+				<input type="checkbox" id="chk_blue" checked="true"/>
+				<label for="chk_blue">Blue</label>
+			</div>
+
+			<!-- boton aleatorio -->
+			<div id="random_section">
+				<label id="main_label">Random color:</label>
+				<button id="btn_random">random</button>
+			</div>
+
+			<hr>
+			<div id="font_select">
+				<label id="main_label">Font-size:</label>
+				<input id="spinner" name="value">
+			</div>
+		</div>
+
+		<!-- controles de cada color -->
+  	<div id="controls" class="panel" >
+
+			<!-- control rojo -->
+			<div id="r" class="in" >
+				<div id="rPreview" class="preview">
+					<div id="rNumber" class="number">
+					</div>
+				</div>
+				<div id="rSlider" class="slider" > </div>
+			</div>
+
+			<!-- control verde -->
+			<div id="g" class="in" >
+				<div id="gPreview" class="preview">
+					<div id="gNumber" class="number"> </div>
+				</div>
+				<div id="gSlider" class="slider"> </div>
+			</div>
+
+			<!-- control azul -->
+			<div id="b" class="in" >
+				<div id="bPreview" class="preview">
+					<div id="bNumber" class="number"> </div>
+				</div>
+				<div id="bSlider" class="slider"> </div>
+			</div>
+		</div><!-- final controles de cada color -->
+
+		<!-- preview -->
+		<div id="rgbPreview" class="panel" >
+			<div id="rgbNumber" class="sub">
+				<p id="pNumber"></p>
+				<p id="pHex"></p>
+			</div>
+		</div>
+
+
+
+	</div><!-- final content -->
+
+	<!-- text content -->
+	<div id="text_content">
+		<p id="text">Lorem ipsum dolor</p>
+	</div>
+</body>
+</html>
